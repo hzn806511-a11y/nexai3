@@ -1,0 +1,7 @@
+RewriteEngine On
+# اگر فایل یا پوشه وجود نداشت، ریدایرکت نکن (امنیت استاندارد)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# صفحه پیش‌فرض index.php است
+DirectoryIndex index.php
